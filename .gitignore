@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Frontend build
+frontend/build/
+frontend/.env
+
+# Backend build
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# .env files
+.env
+
+# Optional: If using IDEs like VSCode, IntelliJ, etc.
+.vscode/
+.idea/
+
+# NPM packages in general
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.swp
+*.swo
+*.swn
