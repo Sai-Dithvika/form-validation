@@ -50,14 +50,14 @@ const App = () => {
         Department: "",
       });
       setMessage("Employee added successfully!");
-      window.alert("Employee added successfully");
+      // window.alert("Employee added successfully");
       setErrors({});
     } catch (error) {
       const errorMessage = error.response?.data?.error || "Something went wrong";
     setMessage(errorMessage);
 
     
-    window.alert(errorMessage);
+    // window.alert(errorMessage);
     }
   };
 
@@ -78,7 +78,7 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h2 className="text-2xl font-bold mb-4 text-gray-800">Add Employee</h2>
-        {/* {message && <p className={`mb-4 ${message.includes("successfully") ? "text-green-600" : "text-red-600"}`}>{message}</p>} */}
+        {message && <p className={`mb-4 ${message.includes("successfully") ? "text-green-600 font-bold" : "text-red-600 font-bold"}`}>{message}</p>}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700 font-medium">Name</label>
